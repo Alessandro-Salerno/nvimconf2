@@ -34,14 +34,16 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end,
 })
 
+local user = require("user")
+
 require('mason').setup({
-    ensure_installed = {'clang-format'}
+    ensure_installed = user.mason.ensure_installed
 })
 
 require('mason-lspconfig').setup({
     -- Replace the language servers listed here 
     -- with the ones you want to install
-    ensure_installed = {'lua_ls', 'rust_analyzer', 'clangd', 'java_language_server'},
+    ensure_installed = user.mason.ensure_installed_lsp,
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})

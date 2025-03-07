@@ -1,6 +1,9 @@
-require("alevm.remap")
-require("alevm.config.colors")
-require("alevm.config.lspzero")
+local user = require("user")
+
+vim.g.mapleader = user.keys.leader
+vim.keymap.set("n", "<C-n>", vim.cmd.Ex)
+
+require(user.theme.path)
 require("alevm.config.telescope")
 require("alevm.config.undotree")
 require("alevm.config.lspzero")
