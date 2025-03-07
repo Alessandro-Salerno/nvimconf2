@@ -34,7 +34,8 @@ require("catppuccin").setup({
     },
     color_overrides = {},
     custom_highlights = {
-        ["CursorLineNr"] = {}
+        ["CursorLineNr"] = { fg = user.theme.opts.line_num_color },
+        ["CursorLine"] = { bg = user.theme.opts.line_color }
     },
     default_integrations = true,
     integrations = {

@@ -4,7 +4,9 @@ return {
         -- This is theme-specific. Look inside the theme's lua file for all
         -- the availabel options
         opts = {
-            flavour = "auto"
+            flavour = "auto",
+            line_num_color = "white",
+            line_color = "#3F3F4F"
         }
     },
 
