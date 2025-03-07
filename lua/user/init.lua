@@ -13,6 +13,11 @@ return {
         ensure_installed_lsp = {'lua_ls', 'rust_analyzer', 'clangd', 'jdtls'}
     },
 
+    treesitter = {
+        ensure_installed = { "c", "java", "lua", "vim", "vimdoc", "query",
+                            "markdown", "markdown_inline", "bash" }
+    },
+
     keys = {
         leader = " "
     }
