@@ -6,7 +6,7 @@ return {
         opts = {
             flavour = "auto",
             line_num_color = "white",
-            line_color = "#3F3F4F"
+            line_color = "#3E3E4F"
         }
     },
 
