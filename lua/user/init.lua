@@ -10,7 +10,7 @@ return {
 
     mason = {
         ensure_installed = {'clang-format'},
-        ensure_installed_lsp = {'lua_ls', 'rust_analyzer', 'clangd', 'java_language_server'}
+        ensure_installed_lsp = {'lua_ls', 'rust_analyzer', 'clangd', 'jdtls'}
     },
 
     keys = {
