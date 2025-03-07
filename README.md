@@ -42,6 +42,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 However, the various plugins may have requirements of their own!
 
+## Installation
+To install this config, jsut run:
+```
+git clone https://github.com/Alessandro-Salerno/nvimconf2 ~/.config/nvim && nvim
+```
+
 ## Customization
 Currently, this config allows quite a small degree of customization without changing files in [lua/alevm](lua/alevm). However, some small tweaks can be made via the [lua/user/init.lua](lua/user/init.lua) file.
 
@@ -54,7 +60,9 @@ theme = {
     -- This is theme-specific. Look inside the theme's lua file for all
     -- the availabel options
     opts = {
-        flavour = "auto"
+        flavour = "auto",
+        line_num_color = "white",
+        line_color = "#3E3E4F"
     }
 },
 
