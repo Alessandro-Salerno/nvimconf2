@@ -1,3 +1,5 @@
+require("alevm.packer")
+
 local user = require("user")
 
 vim.g.mapleader = user.keys.leader
