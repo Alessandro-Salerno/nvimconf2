@@ -13,6 +13,7 @@ require("alevm.config.treesitter")
 require("alevm.config.null-ls")
 require("alevm.config.autoclose")
 
+vim.opt.guicursor = "n-v-i:block-Cursor"
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
