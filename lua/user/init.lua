@@ -11,8 +11,8 @@ return {
     },
 
     mason = {
-        ensure_installed = {'clang-format'},
-        ensure_installed_lsp = {'lua_ls', 'rust_analyzer', 'clangd', 'jdtls'}
+        ensure_installed = {'clang-format', 'fourmolu'},
+        ensure_installed_lsp = {'lua_ls', 'rust_analyzer', 'clangd', 'jdtls', 'hls'}
     },
 
     treesitter = {
